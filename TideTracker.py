@@ -40,18 +40,18 @@ Location specific info required
 # Optional, displayed on top left
 LOCATION = ''
 # NOAA Station Code for tide data
-StationID = #######
+StationID = 8726520
 
 # For weather data
 # Create Account on openweathermap.com and get API key
-API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+API_KEY = 'fd67be9d172fb5f0f4fb8fedb657dfb9'
 # Get LATITUDE and LONGITUDE of location
-LATITUDE = 'XX.XXXXXX'
-LONGITUDE = '-XX.XXXXXX'
+LATITUDE = '27.7484'
+LONGITUDE = '82.7034'
 UNITS = 'imperial'
 
 # Create URL for API call
-BASE_URL = 'http://api.openweathermap.org/data/2.5/onecall?'
+BASE_URL = 'http://api.openweathermap.org/data/3.0/onecall?'
 URL = BASE_URL + 'lat=' + LATITUDE + '&lon=' + LONGITUDE + '&units=' + UNITS +'&appid=' + API_KEY
 
 
@@ -63,7 +63,7 @@ Functions and defined variables
 ****************************************************************
 '''
 
-# define funciton for writing image and sleeping for specified time
+# define function for writing image and sleeping for specified time
 def write_to_screen(image, sleep_seconds):
     print('Writing to screen.') # for debugging
     # Create new blank image template matching screen resolution
